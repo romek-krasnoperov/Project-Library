@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Project-Library</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Library</h1>
+        <h3>Here, you may check, add, delete a book from library.</h3>
+        <div>
+            <button data-button-header-add id="button-header-add">Add new book</button>
+        </div>
+    </header>
+
+    <main>
+        <section data-book-list id="book-list">
+            <!-- books will be added dynamically by JS -->
+        </section>
+    </main>
+
+    <section data-add-book id="add-book" style="display: none;">
+        <form>
+            <fieldset>
+                <h3>Add new book</h3>
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" required>
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" required>
+                <label for="pages">Pages:</label>
+                <input type="number" name="pages" id="pages" required>
+                <label for="read">Read</label>
+                <input type="checkbox" name="read" id="read">
+                <button data-add-new-book-button type="submit">Add Book</button>
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+
+</html>
